@@ -1,0 +1,2 @@
+In this project we are going to make a password generator web application
+-> in which you can give input using a slider(which shows a length of password) and 4 checkboxes that shows which character , number or symbols you wanting in your password.

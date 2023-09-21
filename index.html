@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>password-Generator</title>
+    <link rel="shortcut icon" href="./assets/dev.png" type="image/x-icon">
+</head>
+<body>
+    <!-- TOP LEVEL WRAPPER SECTION -->
+    <div id="wrapper">
+
+        <!-- MAIN CONTAINER SECTION -->
+        <div class="container">
+
+            <!-- PASSWORD HEADING -->
+            <h1>PASSWORD GENERATOR</h1>
+
+            <!-- INPUT AREA WITH COPY BUTTON -->
+            <div class="input-button">
+                <input type="text" readonly placeholder="Password">
+                <img src="./assets/copy.svg" alt="copy icon" height="23" width="23">
+            </div>
+
+            <!-- GENERATE PASSWORD AREA -->
+            <div class="generate-password-area">
+
+                <!-- PASSWORD LENGTH COUNT AND TEXT -->
+                <div class="length-count">
+                    <p>Password Length</p>
+                    <p>0</p>
+                </div>
+
+                <!-- RANGE INPUT -->
+                <input type="range" min="1" max="20" step="1">
+
+                <!-- CHECKBOXES -->
+                <div class="checkbox1">
+                    <input type="checkbox" id="uppercase">
+                    <label for="uppercase">Include Uppercase Letters</label>
+                </div>     
+
+                <div class="checkbox2">
+                    <input type="checkbox" id="lowercase">
+                    <label for="lowercase">Include Lowecase Letters</label>
+                </div>  
+
+                <div class="checkbox3">
+                    <input type="checkbox" id="numbers">
+                    <label for="numbers'">Include Numbers</label>
+                </div> 
+
+                <div class="checkbox4">
+                    <input type="checkbox" id="symbols">
+                    <label for="symbols">Include Symbols</label>
+                </div>
+
+                <!-- STRENGTH INDICATOR SECTION -->
+                <div class="strength">
+                    <p>Strength</p>
+                    <span class="indicator"></span>
+                </div>
+
+                <!-- ADDING PASSWORD GENERATE BUTTON -->
+                <button class="btn">
+                    GENERATE PASSWORD
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ADDING SCRIPT  -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -11,6 +11,7 @@ const allCheckBox = document.querySelectorAll("input[type=checkbox]");
 const strengthLight = document.querySelector(".indicator");
 const generateBtn = document.querySelector(".btn");
 const symbols = '~`!@#$%^&*()_-+={[}]|:;"<,>.?/';
+const resetButton = document.querySelector(".reset");
 
 
 let password = "";
@@ -137,6 +138,10 @@ copyBtn.addEventListener('click' , ()=>{
         copyClipboardMsg();
     }
 });
+
+resetButton.addEventListener('click' , ()=>{
+    displayMsg.value = "";
+})
 
 
 generateBtn.addEventListener('click' , ()=>{

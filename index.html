@@ -18,8 +18,15 @@
 
             <!-- INPUT AREA WITH COPY BUTTON -->
             <div class="input-button">
-                <input type="text" readonly placeholder="Password">
-                <img src="./assets/copy.svg" alt="copy icon" height="23" width="23">
+                <input type="text" readonly placeholder="Password" input-text >
+
+                <!--COPY MESSAGE BUTTON -->
+                <button data-copy>
+                    <span data-copyMsg></span>
+                    <img src="./assets/copy.svg" alt="copy" width="23" height="23">
+                </button>
+
+
             </div>
 
             <!-- GENERATE PASSWORD AREA -->
@@ -28,11 +35,11 @@
                 <!-- PASSWORD LENGTH COUNT AND TEXT -->
                 <div class="length-count">
                     <p>Password Length</p>
-                    <p>0</p>
+                    <p length-Display>0</p>
                 </div>
 
                 <!-- RANGE INPUT -->
-                <input type="range" min="1" max="20" step="1">
+                <input type="range" min="1" max="20" step="1" input-slider> 
 
                 <!-- CHECKBOXES -->
                 <div class="checkbox1">

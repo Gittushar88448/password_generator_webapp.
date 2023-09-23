@@ -26,7 +26,8 @@ function handleSlider() {
 handleSlider();
 
 function strengthColor(color) {
-    strengthLight.style.backgroundcolor = color;
+    strengthLight.style.backgroundColor = color;
+    strengthLight.style.boxShadow = `0px 0px 12px 1px ${color}`
 }
 
 function getRandomThings(min, max) {
@@ -141,7 +142,8 @@ copyBtn.addEventListener('click' , ()=>{
 
 resetButton.addEventListener('click' , ()=>{
     displayMsg.value = "";
-})
+    strengthColor("#ffffff");
+});
 
 
 generateBtn.addEventListener('click' , ()=>{

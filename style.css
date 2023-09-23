@@ -7,8 +7,8 @@
 }
 
 :root{
-    --dk-violet: hsl(268, 75%, 9%);
-    --lt-violet: hsl(268, 47%, 21%);
+    --dk-violet: hsla(268, 74%, 9%, 0.849);
+    --lt-violet: hsl(268, 48%, 21%);
     --lt-violet2: hsl(281, 89%, 26%);
     --vb-violet: hsl(285, 91%, 52%);
     --vb-violet2: hsl(290, 70%, 36%);
@@ -26,7 +26,7 @@
 #wrapper{
     height: 100vh;
     width: 100vw;
-    background: linear-gradient(-30deg, #92fff0f8 12%, rgb(235, 185, 255) 40%, #76db98 100%);
+    background: linear-gradient(-30deg, #008a77f8 12%, rgb(77, 23, 99) 40%, #006b4b 100%);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -70,6 +70,7 @@ h1 {
     padding-right: 3.25rem;
     border: none;
     outline: none;
+    
     border-radius: 1rem;
 }
 

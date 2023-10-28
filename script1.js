@@ -16,13 +16,13 @@ const resetButton = document.querySelector(".reset");
 
 let password = "";
 let lengthDisplay = 10;
-let countCheckBox = 0;
+let countCheckBox;
 
 function handleSlider() {
     sliderInput.value = lengthDisplay;
     lengthCount.innerText = lengthDisplay;
-    const maxi = sliderInput.max(lengthDisplay);
-    const mini = sliderInput.min(lengthDisplay);
+    const maxi = sliderInput.max;
+    const mini = sliderInput.min;
     sliderInput.style.backgroundSize = ( (lengthDisplay - mini)*100/(maxi - mini))+ "% 100%";
 }
 
@@ -146,6 +146,8 @@ copyBtn.addEventListener('click' , ()=>{
 resetButton.addEventListener('click' , ()=>{
     displayMsg.value = "";
     strengthColor("#ffffff");
+    lengthDisplay = 10;
+    handleSlider();
 });
 
 

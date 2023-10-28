@@ -21,8 +21,8 @@ let countCheckBox = 0;
 function handleSlider() {
     sliderInput.value = lengthDisplay;
     lengthCount.innerText = lengthDisplay;
-    const maxi = sliderInput.max;
-    const mini = sliderInput.min;
+    const maxi = sliderInput.max(lengthDisplay);
+    const mini = sliderInput.min(lengthDisplay);
     sliderInput.style.backgroundSize = ( (lengthDisplay - mini)*100/(maxi - mini))+ "% 100%";
 }
 
